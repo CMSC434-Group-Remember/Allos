@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Allos!"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:id="@+id/btnAdd_Contact"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+       />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Firstname"
+        android:ems="10"
+        android:id="@+id/txtFirstname"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/txtTelephone"
+        android:layout_alignStart="@+id/txtTelephone"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/txtTelephone"
+        android:layout_alignTop="@+id/lblTelephone"
+        android:layout_alignLeft="@+id/btnAdd_Contact"
+        android:layout_alignStart="@+id/btnAdd_Contact"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Firstname"
+        android:id="@+id/lblName"
+        android:layout_alignTop="@+id/txtFirstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telephone"
+        android:id="@+id/lblTelephone"
+        android:layout_below="@+id/txtFamilyname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Familyname"
+        android:id="@+id/lblFamilyname"
+        android:layout_below="@+id/txtFirstname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Familyname"
+        android:ems="10"
+        android:id="@+id/txtFamilyname"
+        android:layout_alignTop="@+id/lblFamilyname"
+        android:layout_alignLeft="@+id/txtTelephone"
+        android:layout_alignStart="@+id/txtTelephone"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/txtTelephone"
+        android:layout_alignLeft="@+id/txtTelephone"
+        android:layout_alignStart="@+id/txtTelephone"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email:"
+        android:id="@+id/lblEmail"
+        android:layout_alignTop="@+id/txtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

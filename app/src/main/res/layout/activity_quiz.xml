@@ -19,7 +19,7 @@
         android:layout_marginTop="200dp">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button_option1"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -29,7 +29,7 @@
         </Button>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_option2"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -47,7 +47,7 @@
         android:layout_marginTop="30dp">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button_option3"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -58,7 +58,7 @@
         </Button>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button_option4"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -67,7 +67,6 @@
             android:text="Jason">
 
         </Button>
-
 
     </LinearLayout>
 

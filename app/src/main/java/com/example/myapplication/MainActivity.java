@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toolbar;
-import android.support.
+
 //import android.support.design.widget.BottomNavigationView;
 
 
@@ -21,23 +21,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        Button add_contact = (Button) findViewById(R.id.button);
+        add_contact.setOnClickListener(new OnClickListener() {
+
+            // Call startExplicitActivation() when pressed
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.action_recents:
-                        Toast.makeText(MainActivity.this, "Recents", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.action_favorites:
-                        Toast.makeText(MainActivity.this, "Favorites", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.action_nearby:
-                        Toast.makeText(MainActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
-                        break;
-                }
-                return true;
+            public void onClick(View v) {
+
+                goto_quiz();
+
             }
         });
+
+    }
+    public void goto_quiz(){
+        Intent i = new Intent(this, QuizActivity.class);
+        startActivity(i);
     }
 }

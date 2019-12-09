@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_marginTop="90dp"
+        tools:srcCompat="@tools:sample/avatars[4]" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.4"
+            android:text="Nick">
+
+        </Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.4"
+            android:text="Alex">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="0.4"
+            android:text="Chris">
+
+        </Button>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.4"
+            android:text="Jason">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_contacts"
+        android:enabled="true"
+        android:title="Contacts"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_map"
+        android:enabled="true"
+        android:title="Map"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_stellar"
+        android:enabled="true"
+        android:title="Stellar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_quiz"
+        android:enabled="true"
+        android:title="Learn"
+        app:showAsAction="ifRoom" />
+</menu>

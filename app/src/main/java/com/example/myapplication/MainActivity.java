@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button add_contact = (Button) findViewById(R.id.button);
-        add_contact.setOnClickListener(new OnClickListener() {
+
+        Button quiz_button = (Button) findViewById(R.id.button3);
+        quiz_button.setOnClickListener(new OnClickListener() {
 
             // Call startExplicitActivation() when pressed
             @Override
@@ -32,10 +33,24 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        Button contactButton = (Button) findViewById(R.id.button);
+        contactButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goto_add_contact();
+            }
+        });
 
     }
     public void goto_quiz(){
         Intent i = new Intent(this, QuizActivity.class);
         startActivity(i);
     }
-}
+    public void goto_add_contact(){
+        Intent i = new Intent(this, contactActivity.class);
+        startActivity(i);
+    }
+
+
+
+    }

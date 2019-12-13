@@ -62,7 +62,7 @@ public class QuizActivity extends  AppCompatActivity{
                 btn_click_correct();
             }
         });
-        btn_1.setOnClickListener(new OnClickListener() {
+        btn_4.setOnClickListener(new OnClickListener() {
 
             // Call startExplicitActivation() when pressed
             @Override
@@ -80,9 +80,6 @@ public class QuizActivity extends  AppCompatActivity{
     public void btn_click_correct(){
         Toast.makeText(getApplicationContext(),"Correct!!! Good job!!",Toast.LENGTH_SHORT).show();
     }
-
-
-
 
     }
 

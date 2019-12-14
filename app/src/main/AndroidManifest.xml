@@ -19,8 +19,8 @@
         <activity android:name=".QuizActivity">
         </activity>
         <activity android:name=".contactActivity">
-
         </activity>
+        <activity android:name=".NetworkActivity"></activity>
     </application>
 
 </manifest>

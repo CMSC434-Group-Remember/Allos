@@ -40,7 +40,13 @@ public class MainActivity extends AppCompatActivity {
                 goto_add_contact();
             }
         });
-
+        Button network_button = (Button) findViewById(R.id.button2);
+        network_button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goto_network();
+            }
+        });
     }
     public void goto_quiz(){
         Intent i = new Intent(this, QuizActivity.class);
@@ -50,7 +56,15 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, contactActivity.class);
         startActivity(i);
     }
-
-
-
+    public void goto_network(){
+        Intent i = new Intent(this, NetworkActivity.class);
+        startActivity(i);
     }
+
+
+
+
+
+
+
+}
